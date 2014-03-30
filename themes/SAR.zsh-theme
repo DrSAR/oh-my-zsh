@@ -47,3 +47,10 @@ else
     ZSH_THEME_GIT_PROMPT_UNMERGED=" ═"
     ZSH_THEME_GIT_PROMPT_UNTRACKED=" ✭"
 fi
+
+#all my aliases 
+alias hgrep='history| grep '
+alias pgrep='ps waux|grep '
+alias rgrep='grep -r'
+# thanks to http://stackoverflow.com/questions/22742299/global-alias-for-last-file-in-current-directory
+alias -g lafi='`ls -rt | tail -n 1 | tee >({ printf "last file: "; cat; } >&2)`'
