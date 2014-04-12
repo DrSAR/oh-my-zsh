@@ -55,3 +55,4 @@ alias rgrep='grep -r'
 # thanks to http://stackoverflow.com/questions/22742299/global-alias-for-last-file-in-current-directory
 alias -g lafi='`ls -rt | tail -n 1 | tee >({ printf "last file: "; cat; } >&2)`'
 alias ip_ostwald_fwd='ssh -N -L 8900:localhost:8888 ostwald &; echo "go to (cmd-double-click): http://localhost:8900"'
+alias grep_nocomment='grep "^[^#]"'
