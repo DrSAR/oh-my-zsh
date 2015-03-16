@@ -56,3 +56,10 @@ alias rgrep='grep -r'
 alias -g lafi='`ls -rt | tail -n 1 | tee >({ printf "last file: "; cat; } >&2)`'
 alias ip_ostwald_fwd='ssh -N -L 8900:localhost:8888 ostwald &; echo "go to (cmd-double-click): http://localhost:8900"'
 alias grep_nocomment='grep "^[^#]"'
+
+# setup for virtualenv following http://www.rosslaird.com/blog/first-steps-with-mezzanine/
+# (this was necessitated by dabbling in mezzanine (a cms driven by django))
+export WORKON_HOME=$HOME/.virtualenvs
+source /usr/local/bin/virtualenvwrapper.sh 
+export PIP_VIRTUALENV_BASE=$WORKON_HOME
+
