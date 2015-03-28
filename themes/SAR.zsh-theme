@@ -55,7 +55,14 @@ alias rgrep='grep -r'
 # thanks to http://stackoverflow.com/questions/22742299/global-alias-for-last-file-in-current-directory
 alias -g lafi='`ls -rt | tail -n 1 | tee >({ printf "last file: "; cat; } >&2)`'
 alias ip_ostwald_fwd='ssh -N -L 8900:localhost:8888 ostwald &; echo "go to (cmd-double-click): http://localhost:8900"'
+alias ip_pfeifer_fwd='ssh -N -L 8901:localhost:8888 fmoosvi@pfeifer &; echo "go to (cmd-double-click): http://localhost:8901"'
 alias grep_nocomment='grep "^[^#]"'
+alias pfeifer='ssh pfeifer'
+alias ostwald='ssh ostwald'
+alias medusa='ssh medusa'
+alias ernst='ssh ernst'
+alias pvbackup='ssh pvbackup'
+
 
 # setup for virtualenv following http://www.rosslaird.com/blog/first-steps-with-mezzanine/
 # (this was necessitated by dabbling in mezzanine (a cms driven by django))
