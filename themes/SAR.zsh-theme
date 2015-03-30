@@ -63,6 +63,9 @@ alias medusa='ssh medusa'
 alias ernst='ssh ernst'
 alias pvbackup='ssh pvbackup'
 
+alias mv='mv -i'
+alias cp='cp -i'
+
 
 # setup for virtualenv following http://www.rosslaird.com/blog/first-steps-with-mezzanine/
 # (this was necessitated by dabbling in mezzanine (a cms driven by django))
